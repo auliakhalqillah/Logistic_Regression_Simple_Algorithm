@@ -47,7 +47,9 @@ $b = b - g$
 
 ## Example Case
 
-We have a dataset of netwrok purchased by customers. The task is to identify would the customer Purchased the network based on their Gender, Age and Estimation Salary. The dataset is downloaded from [here](https://github.com/sawarni99/Simple-Logistic-Regression).
+The Logistic Regression algorithm that has been created in this repository, will be tested by using a dataset of netwrok databases. The task is to identify would the customer Purchased the network or not based on their Gender, Age and Estimation Salary. The dataset is downloaded from [here](https://github.com/sawarni99/Simple-Logistic-Regression).
+
+I use the Logistic Regression algorithm from [Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) as comparison or validation to my Logistic Regression algorithm in this repository.
 
 ### Overview Dataset
 
@@ -61,6 +63,55 @@ The dataset have a number of features as follows
  2   EstimatedSalary  400 non-null    int64
  3   Purchased        400 non-null    int64
 ```
+
+### Overview Result
+
+The parameters in manual logistic regression are $\alpha = 1$ (default) and iteration = 100. For the parameters in Scikit-Learn Logistic Regression are default.
+
+**Manual Logistic Regression**
+
+```
+>> Beta Coefficient: [0.0968919  2.16231606 1.13175678]
+>> Beta Intercept: -1.060096806629165
+- Accuracy: 91.25 percent
+- True Negative: 56
+- False Positive: 2
+- False Negative: 5
+- True Positive: 17
+
+- Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.92      0.97      0.94        58
+           1       0.89      0.77      0.83        22
+
+    accuracy                           0.91        80
+   macro avg       0.91      0.87      0.89        80
+weighted avg       0.91      0.91      0.91        80
+```
+
+**Scikit-Learn Logistic Regression**
+
+```
+>> Beta Coefficient: [[0.14658735 2.04859889 1.07126001]]
+>> Intercept: [-1.06311801]
+- Accuracy: 91.25 percent
+- True Negative: 56
+- False Positive: 2
+- False Negative: 5
+- True Positive: 17
+
+- Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.92      0.97      0.94        58
+           1       0.89      0.77      0.83        22
+
+    accuracy                           0.91        80
+   macro avg       0.91      0.87      0.89        80
+weighted avg       0.91      0.91      0.91        80
+```
+
 
 ## References
 
