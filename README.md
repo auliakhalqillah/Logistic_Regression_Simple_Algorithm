@@ -1,7 +1,7 @@
 # Logistic Regression Simple Algorithm
 
 ## Introduction
-Logistic regression is a method to create a model by using binary data (0 and 1). The goal is to predict something independent variable based on dependent variable. In real application, logistic regression is applied to predict a number of customers who buy a product or who did not based on their previous transaction, to predict a number of fraud transactions in credit card, and so on. In logistic regression, Y-axis lies from 0 – 1.
+Logistic regression is a method to create a model by using binary data (0 and 1). The goal is to predict something independent variable based on a dependent variable. In a real application, logistic regression is applied to predict the number of customers who buy a product or who did not base on their previous transaction, to predict the number of fraud transactions in credit cards, and so on. In logistic regression, Y-axis lies from 0 – 1.
 
 ## Explanation
 
